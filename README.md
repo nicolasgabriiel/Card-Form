@@ -8,12 +8,13 @@ Esse projeto é um simulador de formulário de cartão interativo, o template do
 ### Planejamento de projeto
 
 - [X]Estruturar fundo da Página
-- [ ]Estilizar o fundo da página
+- [X]Estilizar o fundo da página
 - [ ]Estruturar Formulário
 - [ ]Estilizar o Formulário
 - [ ]Estruturar tela de Bem sucedido
 - [ ]Estilizar tela de Bem sucedido
 - [ ]Receber Inputs do Formulário
+- [ ]Gerar valores de input na tela
 - [ ]Criar lógica Verificação
 - [ ]Receber input do Botao
 - [ ]Criar lógica de clicar no botão e se verificado ir à próxima tela

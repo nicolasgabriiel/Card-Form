@@ -1,0 +1,40 @@
+main{
+    display: flex;
+    flex-direction: row;
+}
+.container-left{
+    background-image: url(../images/bg-main-desktop.png);
+    background-size: cover;
+    width: 30%;
+    height: 100vh;
+}
+.container-right{
+    width: 70%;
+    height: 100vh;
+    background-image: linear-gradient(to right, #ededed, #ffffff);
+}
+.front-card{
+    background-image: url(../images/bg-card-front.png) ;
+    background-size: contain;
+    width: 447px;
+    height: 245px;
+    position: relative;
+    left: 45%;
+    top:20%;
+}
+.detail-card{
+   position: relative;
+   top: 10%;
+   left: 10%;
+}
+.back-card{
+    background-image: url(../images/bg-card-back.png) ;
+    background-size: contain;
+    width: 447px;
+    height: 245px;
+    position: relative;
+    left: 60%;
+    top:24%;
+}
+
+
