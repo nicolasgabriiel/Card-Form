@@ -1,8 +1,8 @@
 ###### Card-Form
 
-Esse projeto é um simulador de formulário de cartão interativo, o template do projeto foi tirado do site (Front End Mentor)[https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw].
+Esse projeto é um simulador de formulário de cartão interativo, o template do projeto foi tirado do site [Front End Mentor](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw).
 
->Acesse a Página do projeto clicando (Aqui)[].
+>Acesse a Página do projeto clicando [Aqui]().
 
 
 ### Planejamento de projeto
