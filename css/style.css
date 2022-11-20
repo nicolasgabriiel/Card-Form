@@ -16,8 +16,10 @@ main{
 .front-card{
     background-image: url(../images/bg-card-front.png) ;
     background-size: contain;
-    width: 447px;
-    height: 245px;
+    max-width: 447px;
+    max-height: 245px;
+    width: 100%;
+    height: 50%;
     position: relative;
     left: 45%;
     top:20%;
@@ -35,6 +37,10 @@ main{
     position: relative;
     left: 60%;
     top:24%;
+}
+.formulario{
+    background-color: blue;
+
 }
 
 
