@@ -23,15 +23,19 @@
         <div class="container-right">
             <form class="formulario">
                 <label for="name">cardholder name</label>
-                <input type="text" id="name" placeholder="Jane Applesed">
-                <label for="text">card number</label>
+                <input type="text" id="name" placeholder="Jane Appleseed">
+                <label for="number">card number</label>
                 <input type="text" id="number" placeholder="1234 5678 9123 0000">
-                <label for="month">exp. date (mm/yy)</label>
-                <label for="cvc">cvc</label>
-                <input type="text" id="month" placeholder="MM"> 
-                <input type="text" id="year" placeholder="YY">
-                <input type="text" id="cvc" placeholder="123">
-                <input type="button" value="Confirm"> 
+                <div class="container-month"> 
+                    <label class="label-inline" for="month">exp. date (mm/yy)</label>
+                    <input type="text" id="month" placeholder="MM"> 
+                    <input type="text" id="year" placeholder="YY">
+                </div> <!--container-month-->
+                <div class="container-cvc">
+                    <label class="label-inline" for="cvc">cvc</label>
+                     <input type="text" id="cvc" placeholder="123">
+                </div><!--container cvc-->
+                <input type="button" value="Confirm" class="button" id="confirm"> 
             </form><!-- formulário   --> 
         </div><!--Container right-->
        
