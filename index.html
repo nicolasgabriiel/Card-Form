@@ -22,20 +22,28 @@
         </div><!--Container Left-->
         <div class="container-right">
             <form class="formulario">
-                <label for="name">cardholder name</label>
-                <input type="text" id="name" placeholder="Jane Appleseed">
-                <label for="number">card number</label>
-                <input type="text" id="number" placeholder="1234 5678 9123 0000">
-                <div class="container-month"> 
-                    <label class="label-inline" for="month">exp. date (mm/yy)</label>
-                    <input type="text" id="month" placeholder="MM"> 
-                    <input type="text" id="year" placeholder="YY">
-                </div> <!--container-month-->
-                <div class="container-cvc">
-                    <label class="label-inline" for="cvc">cvc</label>
-                     <input type="text" id="cvc" placeholder="123">
-                </div><!--container cvc-->
-                <input type="button" value="Confirm" class="button" id="confirm"> 
+                <div class="visible">             
+                    <label for="name">cardholder name</label>
+                    <input type="text" id="name" placeholder="Jane Appleseed">
+                    <label for="number">card number</label>
+                    <input type="text" id="number" placeholder="1234 5678 9123 0000">
+                    <div class="container-month"> 
+                        <label class="label-inline" for="month">exp. date (mm/yy)</label>
+                        <input type="text" id="month" placeholder="MM"> 
+                        <input type="text" id="year" placeholder="YY">
+                    </div> <!--container-month-->
+                    <div class="container-cvc">
+                        <label class="label-inline" for="cvc">cvc</label>
+                        <input type="text" id="cvc" placeholder="123">
+                    </div><!--container cvc-->
+                    <input type="button" value="Confirm" class="button" id="confirm"> 
+                 </div><!--visible-->
+                <section class="ocult">
+                    <img src="images/icon-complete.svg">
+                    <h1>THANK YOU!</h1>
+                    <p>We've added your card details</p>
+                    <input type="button" value="Continue" class="button" id="continue"> 
+                </section><!--Ocult-->
             </form><!-- formulário   --> 
         </div><!--Container right-->
        
