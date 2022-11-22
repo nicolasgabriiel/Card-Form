@@ -101,9 +101,10 @@ form  input{
 .container-cvc > input{
     width: 100%;
 }
-.visible{
-    display: none;
-}
+.visible{ }
+.ocult{ display: none;}
+
+
 .ocult{
     margin-top: 320px;
     width: 50%;
