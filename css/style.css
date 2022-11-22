@@ -104,3 +104,26 @@ form  input{
 .visible{
     display: none;
 }
+.ocult{
+    margin-top: 320px;
+    width: 50%;
+    text-align: center;
+}
+.ocult img{
+    display: block;
+    margin: 0 auto;
+}
+#continue{
+    width: 100%;
+}
+.ocult h1{
+    font-size: 30px;
+    font-weight: bold;
+    color: #220930;
+    margin: 10% 0;
+}
+.ocult p{
+    font-size: 16px;
+    color: #939095;
+    font-weight: bold;
+}
