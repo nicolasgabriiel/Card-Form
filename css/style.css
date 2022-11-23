@@ -128,3 +128,29 @@ form  input{
     color: #939095;
     font-weight: bold;
 }
+.numberHtml{
+    margin-left: 10%;
+    color: #F9EEFB;
+    margin-top: 20%;
+    font-size: 30px;
+}
+.nameHtml{
+    color: #F9EEFB;
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 10%;
+    text-transform: uppercase;
+}
+.monthHtml{
+    color: #F9EEFB;
+    font-size: 16px;
+    margin-left: 45%;
+}
+.cvcHtml{
+    font-size: 16px;
+    color:white;
+    position: absolute;
+    top: 46%;
+    left: 80%;
+}

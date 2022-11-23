@@ -37,6 +37,7 @@ confirm.onclick = function (){
 const numberHtml = document.getElementById('numberHtml')
 const nameHtml = document.getElementById('nameHtml')
 const monthHtml = document.getElementById('monthHtml')
+const cvcHtml = document.getElementById('cvcHtml')
 
 //Gerando os elementos HTML na tela
 function gerarHTML (){
@@ -44,7 +45,9 @@ function gerarHTML (){
 numberHtml.innerHTML = numberCard    
 nameHtml.innerHTML = userName
 monthHtml.innerHTML = `${month}/${year}`
+cvcHtml.innerHTML = cvc
 }
+
 
 
 
