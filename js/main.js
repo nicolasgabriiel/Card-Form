@@ -30,10 +30,21 @@ confirm.onclick = function (){
     console.log(month)
     console.log(year)
     console.log(cvc)
+
+    gerarHTML()
 }
+//Recebendo elementos para inserir textos
+const numberHtml = document.getElementById('numberHtml')
+const nameHtml = document.getElementById('nameHtml')
+const monthHtml = document.getElementById('monthHtml')
 
+//Gerando os elementos HTML na tela
+function gerarHTML (){
 
-    
+numberHtml.innerHTML = numberCard    
+nameHtml.innerHTML = userName
+monthHtml.innerHTML = `${month}/${year}`
+}
 
 
 
