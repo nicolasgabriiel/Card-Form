@@ -15,29 +15,29 @@
         <div class="container-left">
            <div class="front-card">
             <img class="detail-card" src="images/card-logo.svg" alt="Imagem Proprietário">
-            <p id="numberHtml" class="numberHtml"></p>
-            <span id="nameHtml" class="nameHtml"></span>
-            <span id="monthHtml" class="monthHtml"></span>
+            <p id="numberHtml" class="numberHtml">0000 0000 0000 0000</p>
+            <span id="nameHtml" class="nameHtml">jane appleseed</span>
+            <span id="monthHtml" class="monthHtml">00/00</span>
            </div><!-- Back Card-->
            <div class="back-card">
-            <span id="cvcHtml" class="cvcHtml"></span>
+            <span id="cvcHtml" class="cvcHtml">123</span>
            </div><!-- Back Card-->
         </div><!--Container Left-->
         <div class="container-right">
             <form class="formulario">
                 <div class="visible">             
                     <label for="name">cardholder name</label>
-                    <input type="text" id="name" placeholder="Jane Appleseed" required>
+                    <input type="text" id="name" placeholder="Jane Appleseed" maxlength="30" autofocus required>
                     <label for="number">card number</label>
-                    <input type="text" id="number" placeholder="1234 5678 9123 0000" required>
+                    <input type="text" id="number" placeholder="1234 5678 9123 0000" maxlength="16" required>
                     <div class="container-month"> 
                         <label class="label-inline" for="month">exp. date (mm/yy)</label>
-                        <input type="text" id="month" placeholder="MM" required> 
-                        <input type="text" id="year" placeholder="YY" required>
+                        <input type="text" id="month" placeholder="MM" maxlength="2" required> 
+                        <input type="text" id="year" placeholder="YY" maxlength="2" required>
                     </div> <!--container-month-->
                     <div class="container-cvc">
                         <label class="label-inline" for="cvc">cvc</label>
-                        <input type="text" id="cvc" placeholder="123" required>
+                        <input type="text" id="cvc" placeholder="123" maxlength="3" required>
                     </div><!--container cvc-->
                     <input type="button" value="Confirm" class="button" id="confirm"> 
                  </div><!--visible-->

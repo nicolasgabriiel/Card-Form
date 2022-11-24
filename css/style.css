@@ -150,8 +150,9 @@ input[type="text"]:focus{
 .monthHtml{
     color: #F9EEFB;
     font-size: 16px;
-    position: relative;
-    left: 100px;
+    position: absolute;
+    top: 199px;
+    left: 350px;
 }
 .cvcHtml{
     font-size: 16px;
