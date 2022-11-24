@@ -27,17 +27,17 @@
             <form class="formulario">
                 <div class="visible">             
                     <label for="name">cardholder name</label>
-                    <input type="text" id="name" placeholder="Jane Appleseed">
+                    <input type="text" id="name" placeholder="Jane Appleseed" required>
                     <label for="number">card number</label>
-                    <input type="text" id="number" placeholder="1234 5678 9123 0000">
+                    <input type="text" id="number" placeholder="1234 5678 9123 0000" required>
                     <div class="container-month"> 
                         <label class="label-inline" for="month">exp. date (mm/yy)</label>
-                        <input type="text" id="month" placeholder="MM"> 
-                        <input type="text" id="year" placeholder="YY">
+                        <input type="text" id="month" placeholder="MM" required> 
+                        <input type="text" id="year" placeholder="YY" required>
                     </div> <!--container-month-->
                     <div class="container-cvc">
                         <label class="label-inline" for="cvc">cvc</label>
-                        <input type="text" id="cvc" placeholder="123">
+                        <input type="text" id="cvc" placeholder="123" required>
                     </div><!--container cvc-->
                     <input type="button" value="Confirm" class="button" id="confirm"> 
                  </div><!--visible-->

@@ -101,7 +101,12 @@ form  input{
 .container-cvc > input{
     width: 100%;
 }
-.visible{ }
+input[type="text"]:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    border: 1px solid #63589A;
+}
+.visible{ display: block;}
 .ocult{ display: none;}
 
 
@@ -145,7 +150,8 @@ form  input{
 .monthHtml{
     color: #F9EEFB;
     font-size: 16px;
-    margin-left: 45%;
+    position: relative;
+    left: 100px;
 }
 .cvcHtml{
     font-size: 16px;
