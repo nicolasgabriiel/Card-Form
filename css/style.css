@@ -174,5 +174,9 @@ input[type=number] {
 }
 
 .error{
-    
+    top: -15px;
+    position: relative;
+    font-size: 10px;
+    color: red;
+    display: block;
 }
