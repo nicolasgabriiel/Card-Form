@@ -127,7 +127,7 @@ function verificaInputCVC (){
         teste3 = true
     }else{
         console.log('digite todos os numeros')
-        errorCvc.innerHTML = "Enter your card's entire security code";
+        errorCvc.innerHTML = "Enter your security code";
         cvcInput.style.border = "1px solid red";
     }
    
