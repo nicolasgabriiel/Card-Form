@@ -23,6 +23,19 @@ let teste2 = false
 let teste3 = false
 
 
+const errorNumberCard = document.getElementById('errorNumberCard')
+const errorMonth = document.getElementById('errorMonth')
+const errorCvc = document.getElementById('errorCvc')
+
+
+const userNameInput = document.getElementById('name')
+const numberCardInput = document.getElementById('number')
+const monthInput = document.getElementById('month')
+const yearInput = document.getElementById('year')
+const cvcInput = document.getElementById('cvc')
+
+
+
 confirm.onclick = function (){
     userName = document.getElementById('name').value
     numberCard = document.getElementById('number').value
@@ -49,6 +62,17 @@ numberHtml.innerHTML = numberCard.substring(0,4) + " " + numberCard.substring(4,
 nameHtml.innerHTML = userName
 monthHtml.innerHTML = `${month}/${year}`
 cvcHtml.innerHTML = cvc
+
+
+
+
+
+
+
+
+
+
+
 }
 function verificaInputsMonth (){
     if(month > 0 && month < 13 && year > 21 && year < 40){
@@ -57,15 +81,29 @@ function verificaInputsMonth (){
         
     } else if( month == "" && year == ""){
         console.log('os dois vazios')
+        errorMonth.innerHTML = "Can't be blank";
+        monthInput.style.border = "1px solid red";
+        yearInput.style.border = "1px solid red";
     }else if( month == "" ){
         console.log('month vazio')
+        errorMonth.innerHTML = "Can't be blank";
+        monthInput.style.border = "1px solid red";
     }
     else if( year == "" ){
         console.log('year vazio')
+        errorMonth.innerHTML = "Can't be blank";
+        yearInput.style.border = "1px solid red";
     }else if (month < 1 || month > 12 || year < 22 || year > 39){
         console.log('digite apenas números válios')
+        errorMonth.innerHTML = "   Enter only valid numbers";
+        monthInput.style.border = "1px solid red";
+        yearInput.style.border = "1px solid red";
     }else{
         console.log('Digite apenas numeros')
+        console.log('digite apenas números válios')
+        errorMonth.innerHTML = "   Enter only numbers";
+        monthInput.style.border = "1px solid red";
+        yearInput.style.border = "1px solid red";
     }
     
 }
@@ -79,7 +117,9 @@ function verificaInputNumberCard (){
         console.log('okay')
         teste2 = true
     }else{
-        console.log('deu muita merda')
+        console.log('deu muita merda nos numeros')
+        numberCardInput.style.border = "1px solid red";
+        errorNumberCard.innerHTML = "Enter all your card numbers"
     }
 }
 
@@ -90,11 +130,15 @@ function verificaInputCVC (){
     console.log(cvc)
     if(cvc == "NaN" ){
         console.log('sou NAN')
+        errorCvc.innerHTML = "Enter only numbers";
+        cvcInput.style.border = "1px solid red";
     }else if (cvc.length == 3 ){
         console.log('deu certo')
         teste3 = true
     }else{
         console.log('digite todos os numeros')
+        errorCvc.innerHTML = "Enter your card's entire security code";
+        cvcInput.style.border = "1px solid red";
     }
    
 }

@@ -30,18 +30,22 @@
                     <input type="text" id="name" placeholder="Jane Appleseed" maxlength="30" autofocus required>
                     <label for="number">card number</label>
                     <input type="tel" id="number" placeholder="1234 5678 9123 0000" maxlength="16" required>
+                    <span id="errorNumberCard" class="error"></span>
                     <div class="container-month"> 
                         <label class="label-inline" for="month">exp. date (mm/yy)</label>
                         <input type="tel" id="month" placeholder="MM" maxlength="2" required> 
                         <input type="tel" id="year" placeholder="YY" maxlength="2" required>
+                        <span id="errorMonth" class="error"></span>
                     </div> <!--container-month-->
                     <div class="container-cvc">
                         <label class="label-inline" for="cvc">cvc</label>
                         <input type="tel" id="cvc" placeholder="123" maxlength="3" required>
+                        <span id="errorCvc" class="error"></span>
                     </div><!--container cvc-->
                     <input type="button" value="Confirm" class="button" id="confirm"> 
                  </div><!--visible-->
             </form><!-- formulário   --> 
+           
             <div class="formulario">
                 <section class="ocult">
                     <img src="images/icon-complete.svg">
@@ -50,6 +54,7 @@
                     <input type="submit" value="Continue" class="button" id="continue"> 
                 </section><!--Ocult-->
             </div>
+        
         </div><!--Container right-->
        
     </main>

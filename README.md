@@ -20,5 +20,6 @@ Esse projeto é um simulador de formulário de cartão interativo, o template do
 - [X]Criar lógica Verificação
 - [X]Receber input do Botao
 - [X]Criar lógica de clicar no botão e se verificado ir à próxima tela
-- [x]Criar Avisos de Erros
+- [X]Criar Avisos de Erros
+- [ ]Estilizar Avisos de Erros
 - [ ]Criar design Responsivo
