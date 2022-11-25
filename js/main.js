@@ -60,18 +60,8 @@ function gerarHTML (){
 
 numberHtml.innerHTML = numberCard.substring(0,4) + " " + numberCard.substring(4,8) + " " + numberCard.substring(8,12) + " " +  numberCard.substring(12,16);
 nameHtml.innerHTML = userName
-monthHtml.innerHTML = `${month}/${year}`
+monthHtml.innerHTML = `${month.padStart(2, '0')}/${year}`
 cvcHtml.innerHTML = cvc
-
-
-
-
-
-
-
-
-
-
 
 }
 function verificaInputsMonth (){
@@ -147,5 +137,6 @@ function verificaInputCVC (){
 function verificaLogicaTela (){
     if(teste1 == true && teste2 == true && teste3 == true){
         concluido()
+        gerarHTML()
     }
 }
