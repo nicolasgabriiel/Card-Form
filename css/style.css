@@ -4,6 +4,7 @@ main{
     display: flex;
     flex-direction: row;
 }
+/*      Cartões         */
 .container-left{
     background-image: url(../images/bg-main-desktop.png);
     background-size: cover;
@@ -40,97 +41,6 @@ main{
     left: 60%;
     top:24%;
 }
-.formulario{
-    display: block;  
-    margin: 20% 0 0 40%;
-    width: 50%;
-    
- 
-
-}
-.button{
-    background-color: #220930;
-}
-form label{
-    display: block;
-    text-transform: uppercase;
-    font-size: 16px;
-    color: #220930;
-    font-weight: bold;
-    margin-bottom: 0.7em;
-    
-}
-form  input{
-    display: block;
-    font-size: 20px;
-    width: 60%;
-    height: 2em;
-    border-radius: 8px;
-    margin-bottom: 1em;
-    border: 1px solid #cccccc;
-    padding-left: 15px;
-
-}
-.button{
-    color: white;
-    height: 3em;
-    width: 63%;
-    margin-top: 2em;
-    transition: 0.5s;
-    background-color: #220930;
-}
-.button:hover{
-    scale: 1.05;
-    cursor: pointer;
-}
-#cvc, #year, #month{
-    display: inline-block;
-}
-.container-month{
-    width: 30%;
-    display: inline-block;
-  
-}
-.container-month > input{
-    width: 30%;
-}
-.container-cvc{
-    width: 30%;
-    display: inline-block;   
-   
-}
-.container-cvc > input{
-    width: 100%;
-}
-input[type="text"]:focus{
-    box-shadow: 0 0 0 0;
-    outline: 0;
-    border: 1px solid #63589A;
-}
-.visible{ display: block;}
-.ocult{ display: none;}
-
-
-.ocult{
-    margin-top: 320px;
-    width: 50%;
-    text-align: center;
-}
-.ocult img{
-    display: block;
-    margin: 0 auto;
-}
-.ocult h1{
-    font-size: 30px;
-    font-weight: bold;
-    color: #220930;
-    margin: 1em 0;
-}
-.ocult p{
-    font-size: 16px;
-    color: #939095;
-    font-weight: bold;
-}
 .numberHtml{
     margin-left: 10%;
     color: #F9EEFB;
@@ -159,26 +69,100 @@ input[type="text"]:focus{
     top: 46%;
     left: 80%;
 }
-
-
+/* Estilização do Formulário visivel */
+.formulario{
+    display: block;  
+    margin: 20% 0 0 40%;
+    width: 50%;
+}
+.button{
+    background-color: #220930;
+}
+form label{
+    display: block;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #220930;
+    font-weight: bold;
+    margin-bottom: 0.7em;  
+}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-
 input[type=number] {
     -moz-appearance: textfield;
 }
-
-.error{
-    top: -15px;
-    position: relative;
-    font-size: 10px;
-    color: red;
+form  input{
     display: block;
+    font-size: 20px;
+    width: 60%;
+    height: 2em;
+    border-radius: 8px;
+    margin-bottom: 1em;
+    border: 1px solid #cccccc;
+    padding-left: 15px;
 }
-
+.button{
+    color: white;
+    height: 3em;
+    width: 63%;
+    margin-top: 2em;
+    transition: 0.5s;
+    background-color: #220930;
+}
+.button:hover{
+    scale: 1.05;
+    cursor: pointer;
+}
+#cvc, #year, #month{
+    display: inline-block;
+}
+.container-month{
+    width: 30%;
+    display: inline-block;
+}
+.container-month > input{
+    width: 30%;
+}
+.container-cvc{
+    width: 30%;
+    display: inline-block;   
+   
+}
+.container-cvc > input{
+    width: 100%;
+}
+input[type="text"]:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    border: 1px solid #63589A;
+}
+/* funcionam via JS */
+.visible{ display: block;}
+.ocult{ display: none;}
+/* Container que está oculo */
+.ocult{
+    margin-top: 320px;
+    width: 50%;
+    text-align: center;
+}
+.ocult img{
+    display: block;
+    margin: 0 auto;
+}
+.ocult h1{
+    font-size: 30px;
+    font-weight: bold;
+    color: #220930;
+    margin: 1em 0;
+}
+.ocult p{
+    font-size: 16px;
+    color: #939095;
+    font-weight: bold;
+}
 .ocult > .button{
     color: white;
     height: 3em;
@@ -189,4 +173,12 @@ input[type=number] {
     box-shadow: none;
     border: none;
     border-radius: 8px;
+}
+/* Mensagens de erro */
+.error{
+    top: -15px;
+    position: relative;
+    font-size: 10px;
+    color: red;
+    display: block;
 }

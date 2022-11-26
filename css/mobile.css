@@ -1,5 +1,4 @@
 @media screen and (max-width: 1500px){
-
     main{
         display: flex;
         flex-direction: column;
@@ -9,15 +8,13 @@
         height: auto;
         display: flex;
         flex-direction: column-reverse;
-      
     }
     .container-right{
         width: 100%;
         background-color: white;
         height: auto;
-
     }
-
+    /* Estilização dos Cartões */
     .front-card{
         background-image: url(../images/bg-card-front.png) ;
         background-size: contain;
@@ -56,7 +53,6 @@
         display: inline-block;
         margin-top: 30px;
         margin-left: 5%;
-
     }
     .monthHtml{
         margin-left: 110px;
@@ -74,88 +70,66 @@
         top: 29px;
         left: 270px;
     }
-
-
-/* FORMULARIO */
-
-.formulario{
-    display: block;  
-    margin: 90px auto;
-    width: 90%;
-}
-form label{
-    font-size: 13px;
-    margin-bottom: 0.7em;
+    /*       FORMULARIO      */
+    .formulario{
+        display: block;  
+        margin: 90px auto;
+        width: 90%;
+    }
+    form label{
+        font-size: 13px;
+        margin-bottom: 0.7em;
+    }
+    form  input{
+        display: block;
+        font-size: 18px;
+        width: 95%;
+        height: 1.7em;
+    }
+    .button{
+        color: white;
+        height: 3em;
+        width: 100%;
+        margin-top: 2em;
+        transition: 0.5s;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    #cvc, #year, #month{
+        display: inline-block;
+    }
+    .container-month{
+        width: 50%;
+        display: inline-block;
     
-}
-form  input{
-    display: block;
-    font-size: 18px;
-    width: 95%;
-    height: 1.7em;
-}
-.button{
-    color: white;
-    height: 3em;
-    width: 100%;
-    margin-top: 2em;
-    transition: 0.5s;
-    max-width: 350px;
-    margin: 0 auto;
-}
-
-#cvc, #year, #month{
-    display: inline-block;
-}
-.container-month{
-    width: 50%;
-    display: inline-block;
-  
-}
-.container-month > input{
-    width: 35%;
-}
-.container-cvc{
-    width: 46%;
-    display: inline-block;   
-   
-}
-.container-cvc > input{
-    width: 90%;
-}
-
-
-
-
-
-.ocult{
-    margin: 100px   auto;
-    width: 100%;
-    text-align: center;
-}
-.ocult > .button{
-    color: white;
-    height: 3em;
-    width: 100%;
-    max-width: 350px;
-    margin-top: 2em;
-    transition: 0.5s;
-    background-color: #220930;
-    box-shadow: none;
-    border: none;
-    border-radius: 8px;
-    font-size: 18px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-}
+    }
+    .container-month > input{
+        width: 35%;
+    }
+    .container-cvc{
+        width: 46%;
+        display: inline-block;   
+    
+    }
+    .container-cvc > input{
+        width: 90%;
+    }
+    /* Div Oculta */
+    .ocult{
+        margin: 100px   auto;
+        width: 100%;
+        text-align: center;
+    }
+    .ocult > .button{
+        color: white;
+        height: 3em;
+        width: 100%;
+        max-width: 350px;
+        margin-top: 2em;
+        transition: 0.5s;
+        background-color: #220930;
+        box-shadow: none;
+        border: none;
+        border-radius: 8px;
+        font-size: 18px;
+    }}

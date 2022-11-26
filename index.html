@@ -14,37 +14,49 @@
     <main>
 
         <div class="container-left">
-           <div class="front-card">
-            <img class="detail-card" src="images/card-logo.svg" alt="Imagem Proprietário">
-            <p id="numberHtml" class="numberHtml">0000 0000 0000 0000</p>
-            <span id="nameHtml" class="nameHtml">jane appleseed</span>
-            <span id="monthHtml" class="monthHtml">00/00</span>
-           </div><!-- Back Card-->
+           
+            <div class="front-card">
+                <img class="detail-card" src="images/card-logo.svg" alt="Imagem Proprietário">
+                <p id="numberHtml" class="numberHtml">0000 0000 0000 0000</p>
+                <span id="nameHtml" class="nameHtml">jane appleseed</span>
+                <span id="monthHtml" class="monthHtml">00/00</span>
+           </div><!-- Front Card-->
+           
            <div class="back-card">
-            <span id="cvcHtml" class="cvcHtml">123</span>
+                <span id="cvcHtml" class="cvcHtml">123</span>
            </div><!-- Back Card-->
         </div><!--Container Left-->
+       
         <div class="container-right">
             <form class="formulario">
                 <div class="visible">             
+                   
                     <label for="name">cardholder name</label>
                     <input type="text" id="name" placeholder="Jane Appleseed" maxlength="19" autofocus required>
-                    <label for="number">card number</label>
+                   <!--cardholder name-->
+                    
+                   <label for="number">card number</label>
                     <input type="tel" id="number" placeholder="1234 5678 9123 0000" maxlength="16" required>
                     <span id="errorNumberCard" class="error"></span>
-                    <div class="container-month"> 
+                   <!--card number-->
+                    
+                   <div class="container-month"> 
                         <label class="label-inline" for="month">exp. date (mm/yy)</label>
                         <input type="tel" id="month" placeholder="MM" maxlength="2" required> 
                         <input type="tel" id="year" placeholder="YY" maxlength="2" required>
                         <span id="errorMonth" class="error"></span>
                     </div> <!--container-month-->
+                    
                     <div class="container-cvc">
                         <label class="label-inline" for="cvc">cvc</label>
                         <input type="tel" id="cvc" placeholder="123" maxlength="3" required>
                         <span id="errorCvc" class="error"></span>
                     </div><!--container cvc-->
+                   
                     <input type="button" value="Confirm" class="button" id="confirm"> 
-                 </div><!--visible-->
+                    <!--                           Confirm                         -->
+
+                </div><!--visible-->
             </form><!-- formulário   --> 
            
             <div class="formulario">
