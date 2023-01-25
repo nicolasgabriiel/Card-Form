@@ -101,7 +101,6 @@ function verificaInputCVC (){
         errorCvc.innerHTML = "Enter only numbers";
         cvcInput.style.border = "1px solid red";
     }else if (cvc.length == 3 ){
-        console.log('deu certo')
         teste3 = true
     }else{
         errorCvc.innerHTML = "Enter your security code";
